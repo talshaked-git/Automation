@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Logs and local settings
+*.log
+*.env
+
+# pytest
+.cache/
+.pytest_cache/
+junitxml*.xml
+
+# Playwright
+playwright-python/.local-browsers/
+test-results/
+trace.zip
+*.png
+*.mp4
+
+# Selenium
+screenshots/
+logs/
+
+# Browser downloads and session data
+downloads/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
