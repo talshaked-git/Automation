@@ -1,4 +1,5 @@
 import pytest
+import math
 
 def test_one_add_one():
     assert 1 + 1 == 2
@@ -27,3 +28,7 @@ test_data = [
 @pytest.mark.parametrize('num1, num2, result', test_data)
 def test_multipication(num1, num2, result):
     assert num1 * num2 == result
+
+
+def test_math():
+    assert math.pow(3, 2) == 9
