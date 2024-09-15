@@ -30,3 +30,7 @@ def test_get_brand():
     with pytest.raises(AttributeError) as err:
         print(accum.__brand)
     assert str(err.value) == "type object 'Accumulator' has no attribute '__brand'"
+
+
+# pytest .\tests\test_accum.py -v -s
+# pytest .\tests\test_accum.py::test_get_brand -v
