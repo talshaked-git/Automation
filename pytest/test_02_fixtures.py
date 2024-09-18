@@ -15,10 +15,12 @@ def test_init(accum_global):
     accum_global.count = 2
     assert accum_global.count == 2
 
+@pytest.mark.sanity
 def test_add(accum_global):
     accum_global.add_count(5)
     assert accum_global.count == 5
-
+    
+@pytest.mark.sanity
 def test_add_default(accum_global):
     accum_global.add_count()
     assert accum_global.count == 1
