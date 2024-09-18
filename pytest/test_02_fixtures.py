@@ -10,7 +10,7 @@ import pytest
 def test_new_accum(accum_global):
     assert accum_global.count == 0
     
-
+@pytest.mark.nightly
 def test_init(accum_global):
     accum_global.count = 2
     assert accum_global.count == 2
@@ -19,8 +19,8 @@ def test_init(accum_global):
 def test_add(accum_global):
     accum_global.add_count(5)
     assert accum_global.count == 5
-    
-@pytest.mark.sanity
+
+@pytest.mark.regression
 def test_add_default(accum_global):
     accum_global.add_count()
     assert accum_global.count == 1
