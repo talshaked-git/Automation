@@ -13,11 +13,10 @@ with sync_playwright() as playwright:
     
     for box in checkboxes:
         box.check()
-    
+    #manually dragging the slider to 50%
     slider = page.locator('#slider')
     box = slider.bounding_box()
-    # Calculate the desired position on the slider (e.g., move it halfway)
-    target_x = box['x'] + box['width'] * 0.5  # Moves to 50%
+    target_x = box['x'] + box['width'] * 0.5
     target_y = box['y'] + box['height'] / 2
     page.mouse.click(target_x, target_y)
 
