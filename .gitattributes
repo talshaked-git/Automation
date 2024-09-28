@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Exclude HTML files from language stats
+*.html linguist-documentation
+
+# Mark specific Python files correctly
+*.py linguist-language=Python
