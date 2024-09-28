@@ -6,3 +6,9 @@
 
 # Mark specific Python files correctly
 *.py linguist-language=Python
+
+# Ignore the entire 'public' directory
+public/* linguist-vendored
+
+# Force .html files to be classified as Python 
+*.html linguist-language=Python
